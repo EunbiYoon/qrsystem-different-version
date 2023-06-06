@@ -2,7 +2,7 @@
 <head>
     {% load static %}
     <script src="{% static 'cdn/html5-qrcode.min.js' %}"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style3.css' %}"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style4.css' %}"> 
 </head>
 <body>
     <div class="data-div">
@@ -38,5 +38,26 @@
             }
         </script>
     </div>
+
+    <div class="gen-div">
+        <script src="{% static 'js/scan.js' %}"></script>
+        <h2 align="center">QR Code Generator</h2>
+        <center><img src="" id="img"></center>
+        <select id="size">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
+            <option value="250" selected>250x250</option>
+            <option value="300">300x300</option>
+        </select>
+        <br/><br/>
+        <textarea placeholder="Enter Your Text" id="qrtext"></textarea>
+        <br/><br/>
+        <input type="submit" value="Generate" onclick="genQR()">
+    </div>
+    <div class="footer">
+        <p>Developed By Eunbi Yoon</p>
+    </div>
+
 </body>
 </html>

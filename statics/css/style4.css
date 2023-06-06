@@ -21,3 +21,12 @@ body{
     width:50%;
     margin:auto;
 }
+.gen-div{
+    background-color: lavender;
+    margin:auto;
+    width: 50%;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
